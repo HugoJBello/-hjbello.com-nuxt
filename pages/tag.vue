@@ -28,7 +28,7 @@ export default {
       .limit(10)
       .sortBy('date')
       .where({
-        tag:{ $contains: tag },
+        tags:{ $contains: tag },
         language:locale
       })
       .fetch()
