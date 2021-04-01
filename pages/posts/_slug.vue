@@ -35,7 +35,9 @@
 
 <script>
 export default {
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, params, error, app }) {
+    const locale = app.i18n.locale
+
     const post = await $content(`posts/${params.slug}`)
       .fetch()
       .catch(err => {
@@ -62,7 +64,7 @@ export default {
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: white;
+  color: white !important;
   background-size: 20px 20px;
 }
 </style>

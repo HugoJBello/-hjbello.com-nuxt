@@ -1,7 +1,5 @@
 ---
 title: Este es el título de tu contenido
-description: Aquí una descripción
+description: 
 published: true
 ---
-
-# welcome

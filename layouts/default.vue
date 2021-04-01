@@ -32,21 +32,9 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn
         icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
         @click.stop="clipped = !clipped"
       >
         <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
@@ -98,25 +86,54 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Home',
+          title: this.$t('Home'),
           to: '/'
         },
         {
           icon: 'mdi-apps',
-          title: 'Research',
+          title: this.$t('Papers'),
+          to: '/posts/' + this.$t('papers_post')
+        },
+        {
+          icon: 'mdi-apps',
+          title:  this.$t('Research'),
           to: '/category?category=research'
         },
         {
           icon: 'mdi-apps',
-          title: 'Teaching',
+          title:  this.$t('Teaching'),
           to: '/category?category=teaching'
         },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Hugo J. Bello'
     }
   }
 }
 </script>
+
+<i18n>
+{
+  "en": {
+    "Research": "Research",
+    "Teaching": "Teaching",
+    "Papers": "Papers",
+    "About": "About",
+    "teaching_post": "teaching.en",
+    "papers_post": "papers.en",
+    "research_post": "research.en"
+  },
+  "es": {
+    "Home": "Inicio",
+    "Research": "Investigación",
+    "Teaching": "Docencia",
+    "Papers": "Artículos",
+    "About": "Acerca de",
+    "teaching_post": "teaching.es",
+    "papers_post": "papers.es",
+    "research_post": "research.es"
+  }
+}
+</i18n>

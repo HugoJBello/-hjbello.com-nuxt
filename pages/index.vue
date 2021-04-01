@@ -15,8 +15,14 @@
 
 <script>
 export default {
-  async asyncData({ $content, params, error }) {
-    const index = await $content("index")
+  async asyncData({ $content, params, error,app }) {
+
+    const locale = app.i18n.locale
+
+    const contentFile = (locale==="es")? "index.es": "index.en"
+
+
+    const index = await $content(contentFile)
       .fetch()
       .catch(err => {
         error({ statusCode: 404, message: "index not found" });
