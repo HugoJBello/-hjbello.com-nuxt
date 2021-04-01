@@ -98,14 +98,19 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Home',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
+          icon: 'mdi-apps',
+          title: 'Research',
+          to: '/category?category=research'
+        },
+        {
+          icon: 'mdi-apps',
+          title: 'Teaching',
+          to: '/category?category=teaching'
+        },
       ],
       miniVariant: false,
       right: true,

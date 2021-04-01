@@ -9,6 +9,8 @@
       </li>
     </ul>
   </div>
+
+
 </template>
 
 <script>
@@ -21,11 +23,10 @@ export default {
       });
 
     const posts = await $content("posts")
-      .only(["title", "path"])
+      .only(["title", "path", "date"])
       .limit(5)
-      .sortBy('title')
+      .sortBy('date')
       .where({
-        published: true
       })
       .fetch()
       .catch(err => {

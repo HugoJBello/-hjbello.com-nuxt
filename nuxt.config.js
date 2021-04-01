@@ -42,8 +42,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-i18n'
   ],
+  i18n: {
+    defaultLocale: 'es',
+    vueI18nLoader: true
+  },
   generate: {
     async routes() {
       const { $content } = require("@nuxt/content");
