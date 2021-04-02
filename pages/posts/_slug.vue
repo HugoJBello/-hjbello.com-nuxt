@@ -15,7 +15,7 @@
 
     <p>{{ $t('Article last updated:') }} {{ formatDate(post.date) }}</p>
     <p> <span v-if="post.tags" v-for="tag in post.tags" :key="tag">
-      <nuxt-link :to="baseLink+'/tag/'+tag"><v-chip>{{ tag }}</v-chip></nuxt-link>
+      <a :href="baseLink+'/tag/'+tag"><v-chip>{{ tag }}</v-chip></a>
     </span></p>
 
     <br></br>

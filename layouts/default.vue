@@ -22,16 +22,6 @@
             <v-list-item-title v-text="item.title"/>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item>
-          <v-list-item-content>
-            <nuxt-link
-              v-for="locale in availableLocales"
-              :key="locale.code"
-              @click="$forceUpdate()"
-              :to="switchLocalePath(locale.code)">{{ locale.name }}
-            </nuxt-link>
-          </v-list-item-content>
-        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
@@ -49,13 +39,12 @@
       <v-toolbar-title v-text="title"/>
       <v-spacer/>
 
-      <nuxt-link
+      <a
         v-for="locale in availableLocales"
         :key="locale.code"
-        @click="$forceUpdate()"
-        :to="switchLocalePath(locale.code)">
+        :href="'/' + locale.code">
         <v-toolbar-title v-text="locale.name"/>
-      </nuxt-link>
+      </a>
 
     </v-app-bar>
     <v-main>
