@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1 class="text-3xl py-6">{{ index.title }}</h1>
+    <h1 v-if="!tag || tag===''" class="text-3xl py-6">{{ index.title }}</h1>
 
-    <p class="text-xl py-3">{{ index.description }}</p>
+    <h1 v-if="tag && tag!==''" class="text-3xl py-6">{{$t('Posts in tag')}} <v-chip>{{tag}}</v-chip></h1>
+
+    <p v-if="!tag || tag===''"  class="text-xl py-3">{{ index.description }}</p>
     <nuxt-content :document="index" class="leading-loose center"/>
     <div class="container">
       <div v-for="(post, index) in posts" :key="index">
@@ -44,10 +46,11 @@
 
 <script>
 
-const fetchPosts = async ($content, error, locale, page, itemsPerPage) => {
+const fetchPosts = async ($content, error, locale, tag, page, itemsPerPage) => {
   const skip = (page-1)*itemsPerPage
 
   const where = {language:locale}
+  if (tag && tag !== "") where.tags = { $contains: tag }
 
   console.log(page, skip)
   return await $content("posts")
@@ -64,6 +67,7 @@ const fetchPosts = async ($content, error, locale, page, itemsPerPage) => {
 
 export default {
   async asyncData({$content, route, params, error, app}) {
+    const tag = params.tag || ""
 
     const page = 1
     const itemsPerPage = 10
@@ -79,7 +83,7 @@ export default {
         error({statusCode: 404, message: "index not found"});
       });
 
-    const posts = await fetchPosts($content, error, locale, page, itemsPerPage)
+    const posts = await fetchPosts($content, error, locale, tag, page, itemsPerPage)
 
     return {
       index,
@@ -87,6 +91,7 @@ export default {
       page,
       locale,
       itemsPerPage,
+      tag
     };
   },
   methods: {
