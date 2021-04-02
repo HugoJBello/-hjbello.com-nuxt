@@ -24,7 +24,7 @@ At this moment I collaborate with the following projects
 
 
 ## More:
-You can read a list of my papers [here in my web](/en/posts/papers)
+You can read a list of my papers [here in my web](/en/posts/papers.en)
 
 You can also check my work here
 - [google scholar](https://scholar.google.es/citations?user=JpjgRzsAAAAJ&hl=en)

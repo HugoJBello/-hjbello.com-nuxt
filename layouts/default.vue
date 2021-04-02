@@ -94,12 +94,12 @@ export default {
         {
           icon: 'mdi-beaker-outline',
           title: this.$t('Research'),
-          to: '/category?category=research'
+          to: '/posts/' + this.$t('research_post')
         },
         {
           icon: 'mdi-school',
           title: this.$t('Teaching'),
-          to: '/category?category=teaching'
+          to: '/posts/' + this.$t('teaching_post')
         },
       ],
       miniVariant: false,
@@ -135,7 +135,7 @@ export default {
     "Teaching": "Teaching",
     "Papers": "Papers",
     "About": "About",
-    "teaching_post": "teaching.en",
+    "teaching_post": "docencia.en",
     "papers_post": "papers.en",
     "research_post": "research.en"
   },
@@ -145,7 +145,7 @@ export default {
     "Teaching": "Docencia",
     "Papers": "Artículos",
     "About": "Acerca de",
-    "teaching_post": "teaching.es",
+    "teaching_post": "docencia.es",
     "papers_post": "papers.es",
     "research_post": "research.es"
   }

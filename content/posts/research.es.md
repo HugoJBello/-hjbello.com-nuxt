@@ -22,7 +22,7 @@ En estos momentos colaboro con los siguientes proyectos
 
 ## Más información
 
-consulta una lista de mis artículos [aquí en la web](/posts/papers)
+consulta una lista de mis artículos [aquí en la web](/posts/papers.es)
 
 Puedes ver más también aquí
 - [google scholar](https://scholar.google.es/citations?user=JpjgRzsAAAAJ&hl=en)
