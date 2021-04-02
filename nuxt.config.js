@@ -56,14 +56,7 @@ export default {
     vueI18nLoader: true
   },
   generate: {
-    async routes() {
-      const {$content} = require("@nuxt/content");
-      const files = await $content('posts')
-        .only(["path"])
-        .fetch();
-
-      return files.map(file => (file.path === "/index" ? "/" : file.path));
-    }
+    fallback: true
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
