@@ -5,9 +5,9 @@
     >
       {{ post.title }}
     </h1>
-    <h2 v-if="hasTranslation()" class="subtitle text-center">
-      <nuxt-link :to="translationPage()">{{ $t('Translated version') }}</nuxt-link>
-    </h2>
+    <h4 v-if="hasTranslation()" class="subtitle text-center">
+      <a :href="translationPage()">{{ $t('Translated version') }}</a>
+    </h4>
     <h3 class="py-4 text-center uppercase">{{ post.description }}</h3>
     <nuxt-content :document="post" class="leading-loose"/>
 
@@ -15,7 +15,7 @@
 
     <p>{{ $t('Article last updated:') }} {{ formatDate(post.date) }}</p>
     <p> <span v-if="post.tags" v-for="tag in post.tags" :key="tag">
-      <a :href="baseLink+'/tag/'+tag"><v-chip>{{ tag }}</v-chip></a>
+      <nuxt-link :to="baseLink+'/tag/'+tag"><v-chip>{{ tag }}</v-chip></nuxt-link>
     </span></p>
 
     <br></br>
