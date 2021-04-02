@@ -37,6 +37,7 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
     '@nuxtjs/netlify-files',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -56,8 +57,12 @@ export default {
       },],
     vueI18nLoader: true
   },
+  googleAnalytics: {
+    id: 'UA-181757842-1'
+  },
   generate: {
-    crawler: true
+    crawler: true,
+    fallback: true
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
