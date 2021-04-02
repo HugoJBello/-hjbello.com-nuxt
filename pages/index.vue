@@ -2,10 +2,10 @@
   <div>
     <h1 class="text-3xl py-6">{{ index.title }}</h1>
     <p class="text-xl py-3">{{ index.description }}</p>
-    <nuxt-content :document="index" class="leading-loose"/>
+    <nuxt-content :document="index" class="leading-loose center"/>
     <div class="container">
       <div v-for="(post, index) in posts" :key="index">
-        <nuxt-link :to="post.path" class="underline">
+        <nuxt-link :to="getLink(post.path)" class="underline">
         <v-card class="card">
           <v-img
             v-if="post.image"
@@ -31,7 +31,7 @@
     <div class="text-center">
       <v-pagination
         v-model="page"
-        :length="6"
+        :length="4"
         @input="nextPage"
       ></v-pagination>
     </div>
@@ -50,7 +50,7 @@ const fetchPosts = async ($content, error, locale, page, itemsPerPage) => {
     .only(["title", "path", "date", "description", "image"])
     .limit(itemsPerPage)
     .skip(skip)
-    .sortBy('date')
+    .sortBy('date', "desc")
     .where({
       language: locale
     })
@@ -95,6 +95,13 @@ export default {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
+    },
+    getLink(path){
+      if (this.locale === "es"){
+        return path
+      } else {
+        return `/${this.locale}${path}`
+      }
     }
   }
 
@@ -108,5 +115,8 @@ a:link {
 .card{
   margin: 0 auto;
   max-width: 600px;
+}
+.center{
+  text-align: center;
 }
 </style>

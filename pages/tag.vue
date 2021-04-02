@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1 class="text-3xl py-6">{{$t('Posts in category')}} {{$route.query["tag"]}}</h1>
-    <p class="text-xl py-3">{{ index.description }}</p>
+    <h1 class="title">{{$t('Posts in tag')}} <v-chip>{{$route.query["tag"]}}</v-chip></h1>
+    <p class="subtitle-1">{{ index.description }}</p>
     <nuxt-content :document="index" class="leading-loose"/>
     <div class="container">
       <div v-for="(post, index) in posts" :key="index">
-        <nuxt-link :to="post.path" class="underline">
+        <nuxt-link :to="getLink(post.path)" class="underline">
           <v-card class="card">
             <v-img
               v-if="post.image"
@@ -98,6 +98,13 @@ export default {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
+    },
+    getLink(path){
+      if (this.locale === "es"){
+        return path
+      } else {
+        return `${this.locale}${path}`
+      }
     }
   }
 
@@ -117,10 +124,10 @@ a:link {
 <i18n>
 {
   "en": {
-    "Posts in category": "Posts in category "
+    "Posts in tag": "Posts in tag "
   },
   "es": {
-    "Posts in category": "Posts en "
+    "Posts in tag": "Posts en "
   }
 }
 </i18n>

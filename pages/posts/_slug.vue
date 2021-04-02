@@ -5,6 +5,7 @@
     >
       {{ post.title }}
     </h1>
+    <h2 v-if="hasTranslation()" class="subtitle text-center"><nuxt-link :to="translationPage()">{{$t('Translated version')}}</nuxt-link></h2>
     <h3 class="py-4 text-center uppercase">{{ post.description }}</h3>
     <nuxt-content :document="post" class="leading-loose" />
 
@@ -45,13 +46,27 @@ export default {
       });
 
     return {
-      post
+      post,
+      locale,
+      slug: params.slug
     };
   },
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
+    },
+    hasTranslation(){
+      console.log(this.slug)
+      return this.slug.includes(".es") || this.slug.includes(".en")
+    },
+    translationPage(){
+      console.log(this.locale)
+      if (this.locale === "es") {
+        return "/en/posts/" + this.slug.replace(".es", ".en")
+      } else {
+        return "/posts/" + this.slug.replace(".en", ".es")
+      }
     }
   }
 
@@ -72,10 +87,12 @@ export default {
 <i18n>
 {
   "en": {
+    "Translated version": "versión en español",
     "Article last updated:": "Article last updated:",
     "Table of contents": "Table of contents"
   },
   "es": {
+    "Translated version": "english version",
     "Article last updated:": "Articulo actualizado ",
     "Table of contents": "Contenidos"
 
