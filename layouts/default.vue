@@ -43,7 +43,7 @@
         v-for="locale in availableLocales"
         :key="locale.code"
         :href="(locale.code === 'es')?'/' :'/'+ locale.code">
-        <v-toolbar-title v-text="locale.name"/>
+        <v-toolbar-title v-text="(locale.code === 'es')? 'version español' : 'English version'"/>
       </a>
 
     </v-app-bar>
