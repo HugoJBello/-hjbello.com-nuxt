@@ -1,5 +1,9 @@
 <template>
   <div>
+    <div class="container_image">
+      <img src="@/assets/logo_white.png" class="image_base"></img>
+    </div>
+
     <h1 class="text-3xl py-6">{{ index.title }}</h1>
 
     <p class="text-xl py-3">{{ index.description }}</p>
@@ -134,3 +138,16 @@ a:link {
   }
 }
 </i18n>
+
+
+<style>
+.container_image{
+  display: flex;
+  justify-content: center;
+}
+.image_base{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 200px;
+}
+</style>

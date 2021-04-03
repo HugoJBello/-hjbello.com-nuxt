@@ -30,12 +30,7 @@
       app
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
+      <img src="@/assets/logo_white.png" class="image"></img>
       <v-toolbar-title v-text="title"/>
       <v-spacer/>
 
@@ -43,7 +38,7 @@
         v-for="locale in availableLocales"
         :key="locale.code"
         :href="(locale.code === 'es')?'/' :'/'+ locale.code">
-        <v-toolbar-title v-text="(locale.code === 'es')? 'version español' : 'English version'"/>
+        <v-toolbar-title class="subtitle-2" v-text="(locale.code === 'es')? 'vers. español' : 'English version'"/>
       </a>
 
     </v-app-bar>
@@ -140,3 +135,12 @@ export default {
   }
 }
 </i18n>
+
+<style>
+.image{
+  border-width: 10px;
+  border-color: white;
+  max-width: 60px;
+  margin-right: 20px;
+}
+</style>

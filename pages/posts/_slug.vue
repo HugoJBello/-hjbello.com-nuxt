@@ -5,7 +5,7 @@
     >
       {{ post.title }}
     </h1>
-    <h4 v-if="hasTranslation()" class="subtitle text-center">
+    <h4 v-if="hasTranslation()" class="body-2 text-center">
       <a :href="translationPage()">{{ $t('Translated version') }}</a>
     </h4>
     <h3 class="py-4 text-center uppercase">{{ post.description }}</h3>
@@ -89,12 +89,9 @@ export default {
 
 <style>
 .icon.icon-link {
-  background-image: url('~assets/svg/icon-hashtag.svg');
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  color: white !important;
-  background-size: 20px 20px;
+}
+svg {
+  fill: red;
 }
 </style>
 

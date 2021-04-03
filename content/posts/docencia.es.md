@@ -5,7 +5,7 @@ draft: false
 translationKey: docencia
 tags: ["Teaching"]
 toc: true
-image: http://img.youtube.com/vi/4J_BgKyR7G0/0.jpg
+image: https://img.youtube.com/vi/4J_BgKyR7G0/0.jpg
 description: mi docencia, materiales de docencia actuales y antiguos
 language: es
 menu:
@@ -18,7 +18,7 @@ Este cuatrimeste imparto la asignatura *"FUNDAMENTOS DE LA MEDIDA, DEL TRATAMIEN
 Estoy subiendo los vídeos de la asignatura a la siguiente lista de [reporducción de youtube](https://www.youtube.com/playlist?list=PLAwpU-CQvsuAtHCKzVpGgnq73e1v2O0Ij)
 
 
-[![Curso](http://img.youtube.com/vi/4J_BgKyR7G0/0.jpg)](http://www.youtube.com/watch?v=4J_BgKyR7G0 "Curso")
+[![Curso](https://img.youtube.com/vi/4J_BgKyR7G0/0.jpg)](http://www.youtube.com/watch?v=4J_BgKyR7G0 "Curso")
 
 
 ## Materiales cursos pasados
