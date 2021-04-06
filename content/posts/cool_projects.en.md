@@ -18,4 +18,5 @@ There are some interesting projects that want to list here because I had a lot o
 - I have been working for a while in using web scraping to extract real state data from the main real state webs in Spain.
 - Using Golang and Nodejs I was able to subtract 10 years worth of news from the main Spanish newspapers. Check the repo [here](https://github.com/news-scrapers). This is part of an ongoing unpublished work about suicide and news.
 
-[a](https://drive.google.com/file/d/1LdaqQaZvGJV1ogxQl1JC6VebyTfLXhNw/view?usp=sharing) 
+
+[b](https://drive.google.com/drive/folders/1OhtLXEZPH8bqgoj5sGvWG7HeIve1hObm?usp=sharing)

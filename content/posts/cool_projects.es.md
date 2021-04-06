@@ -18,6 +18,8 @@ Aquí algunos proyectos interesantes en los que estoy trabajando
 - Soy el autor de la librería javascript [string-to-hex-code-color](https://github.com/HugoJBello/string-to-hex-code-color). Esta librería usa funciones hash para obtener un color de forma única a partir de texto.
 - Durante bastante tiempo me especialicé en web-crawling o web-scraping. En este repo llevo a cabo un [scrapeo de noticias en español e inglés:](https://github.com/news-scrapers)
 
+[b](https://drive.google.com/drive/folders/1OhtLXEZPH8bqgoj5sGvWG7HeIve1hObm?usp=sharing)
+
 <!--
 tags: research, coding
 title: Cool projects
