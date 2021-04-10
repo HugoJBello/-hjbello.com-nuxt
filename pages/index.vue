@@ -25,6 +25,7 @@
                 </v-card-subtitle>
               </div>
               <v-avatar
+                v-if="post.image"
                 class="ma-3"
                 size="125"
                 tile
