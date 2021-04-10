@@ -9,23 +9,29 @@
     <div class="container">
       <div v-for="(post, index) in posts" :key="index">
         <nuxt-link :to="getLink(post.path)" class="underline">
-        <v-card class="card">
-          <v-img
-            v-if="post.image"
-            height="150"
-            :src="post.image"
-          ></v-img>
-          <v-card-title>
-            {{post.title}}
-          </v-card-title>
-          <v-card-text>
-            {{post.description}}
-          </v-card-text>
-          <v-card-subtitle>
-            {{formatDate(post.date)}}
-          </v-card-subtitle>
-
-        </v-card>
+          <v-card class="card">
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-card-title>
+                  {{ post.title }}
+                </v-card-title>
+                <v-card-text>
+                  {{ post.description }}
+                </v-card-text>
+                <v-card-subtitle>
+                  {{ formatDate(post.date) }}
+                </v-card-subtitle>
+              </div>
+              <v-avatar
+                class="ma-3"
+                size="125"
+                tile
+              >
+                <v-img v-if="post.image"
+                       :src="post.image"></v-img>
+              </v-avatar>
+            </div>
+          </v-card>
         </nuxt-link>
         <br></br>
       </div>

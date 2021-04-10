@@ -11,23 +11,29 @@
     <div class="container">
       <div v-for="(post, index) in posts" :key="index">
         <nuxt-link :to="getLink(post.path)" class="underline">
-        <v-card class="card">
-          <v-img
-            v-if="post.image"
-            height="150"
-            :src="post.image"
-          ></v-img>
-          <v-card-title>
-            {{post.title}}
-          </v-card-title>
-          <v-card-text>
-            {{post.description}}
-          </v-card-text>
-          <v-card-subtitle>
-            {{formatDate(post.date)}}
-          </v-card-subtitle>
-
-        </v-card>
+          <v-card class="card">
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-card-title>
+                  {{ post.title }}
+                </v-card-title>
+                <v-card-text>
+                  {{ post.description }}
+                </v-card-text>
+                <v-card-subtitle>
+                  {{ formatDate(post.date) }}
+                </v-card-subtitle>
+              </div>
+              <v-avatar
+                class="ma-3"
+                size="125"
+                tile
+              >
+                <v-img v-if="post.image"
+                       :src="post.image"></v-img>
+              </v-avatar>
+            </div>
+          </v-card>
         </nuxt-link>
         <br></br>
       </div>
@@ -49,9 +55,9 @@
 <script>
 
 const fetchPosts = async ($content, error, locale, page, itemsPerPage) => {
-  const skip = (page-1)*itemsPerPage
+  const skip = (page - 1) * itemsPerPage
 
-  const where = {language:locale}
+  const where = {language: locale}
 
   console.log(page, skip)
   return await $content("posts")
@@ -94,16 +100,16 @@ export default {
     };
   },
   methods: {
-    async nextPage(){
-      this.posts = await fetchPosts(this.$content,this.error, this.locale, this.page, this.itemsPerPage )
+    async nextPage() {
+      this.posts = await fetchPosts(this.$content, this.error, this.locale, this.page, this.itemsPerPage)
       console.log(this.posts)
     },
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      const options = {year: 'numeric', month: 'long', day: 'numeric'}
       return new Date(date).toLocaleDateString('en', options)
     },
-    getLink(path){
-      if (this.locale === "es"){
+    getLink(path) {
+      if (this.locale === "es") {
         return path
       } else {
         return `/${this.locale}${path}`
@@ -118,11 +124,13 @@ export default {
 a:link {
   text-decoration: none;
 }
-.card{
+
+.card {
   margin: 0 auto;
   max-width: 600px;
 }
-.center{
+
+.center {
   text-align: center;
 }
 </style>
@@ -141,11 +149,12 @@ a:link {
 
 
 <style>
-.container_image{
+.container_image {
   display: flex;
   justify-content: center;
 }
-.image_base{
+
+.image_base {
   text-align: center;
   margin: 0 auto;
   max-width: 200px;
