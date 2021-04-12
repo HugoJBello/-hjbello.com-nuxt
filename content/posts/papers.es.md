@@ -1,6 +1,6 @@
 ---
 title: "Artículos"
-date: 2021-04-07T17:41:52.674Z
+date: 2021-04-12T16:23:03.853Z
 tags: ["Research", "Papers"]
 description: mis artículos publicados y preprints
 language: es
@@ -9,6 +9,8 @@ language: es
 
     
 ## Artículos publicados
+
+1. **Diagnostic stability in Bipolar Disorder: A follow-up study in 130.000 patient-years**. 2021 - *The Journal of Clinical Psychiatry*  (journal-article).
 
 1. **Stress Salivary Biomarkers Answer During the Work Day in Emergencies  in Healthcare Professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article).
 
