@@ -128,7 +128,7 @@ a:link {
 }
 .card{
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 600px !important;
 }
 .center{
   text-align: center;
