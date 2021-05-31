@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content">
     <h1
       class="my-8 max-w-full m-auto text-3xl text-center font-medium"
     >
@@ -89,6 +89,10 @@ export default {
 
 <style>
 .icon.icon-link {
+}
+.content {
+  margin: 0 auto;
+  max-width: 800px;
 }
 svg {
   fill: red;
