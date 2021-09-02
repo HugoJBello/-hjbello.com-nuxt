@@ -7,8 +7,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - hjbello.com-nuxt',
-    title: 'hjbello.com-nuxt',
+    titleTemplate: '%s hjbello.com',
+    title: 'hjbello.com',
     htmlAttrs: {
       lang: 'en'
     },
