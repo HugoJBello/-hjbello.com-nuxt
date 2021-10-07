@@ -4,12 +4,19 @@
       <img src="@/assets/logo_white.png" class="image_base"></img>
     </div>
 
-    <v-card class="card-big">
+    <v-card class="card-big" v-if="!$vuetify.breakpoint.mobile">
     <v-row class="row-container d-flex flex-no-wrap justify-space-between">
       <v-col v-for="img in images" :key="img" >
         <v-img height="120px" width="120px" :src='require("./img/"+img)'></v-img>
       </v-col>
     </v-row>
+    </v-card>
+    <v-card class="card-big" v-else>
+      <v-row class="row-container d-flex flex-no-wrap justify-space-between">
+        <v-col v-for="img in images.slice(0,6)" :key="img" >
+          <v-img height="60px" width="60px" :src='require("./img/"+img)'></v-img>
+        </v-col>
+      </v-row>
     </v-card>
 
 
@@ -69,7 +76,6 @@ const fetchPosts = async ($content, error, locale, page, itemsPerPage) => {
 
   const where = {language: locale}
 
-  console.log(page, skip)
   return await $content("posts")
     .only(["title", "path", "date", "description", "image"])
     .limit(itemsPerPage)
@@ -88,14 +94,18 @@ export default {
     const page = 1
     const itemsPerPage = 10
     const images = [
+      "2020-tda.png",
       "ansiedad_escala_golberg_vs_resiliencia_boxplot.png",
       "average_month_crime_news.png",
       "citrulline_boxplots.png",
       "discriminant_edited_diagram.png",
+      "graph_months_subjects.png",
       "grpah_diagnose_pallete_clean.png",
+      "opinion_cis_and_trend_final.png",
       "suicidios_trend.png",
       "tags_gender_violence_big.png",
-      "tda_example.png"
+      //"tda_example.png",
+      //"tda_figure.png"
     ]
 
     const locale = app.i18n.locale
@@ -123,7 +133,6 @@ export default {
   methods: {
     async nextPage() {
       this.posts = await fetchPosts(this.$content, this.error, this.locale, this.page, this.itemsPerPage)
-      console.log(this.posts)
     },
     formatDate(date) {
       const options = {year: 'numeric', month: 'long', day: 'numeric'}
@@ -136,7 +145,14 @@ export default {
         return `/${this.locale}${path}`
       }
     }
-  }
+  },
+  data() {
+    return {
+      test: "data",
+      test2: "data2",
+      test4: "data4"
+    };
+  },
 
 };
 </script>
