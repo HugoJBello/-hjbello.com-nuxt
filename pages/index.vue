@@ -4,6 +4,15 @@
       <img src="@/assets/logo_white.png" class="image_base"></img>
     </div>
 
+    <v-card class="card-big">
+    <v-row class="row-container d-flex flex-no-wrap justify-space-between">
+      <v-col v-for="img in images" :key="img" >
+        <v-img height="120px" width="120px" :src='require("./img/"+img)'></v-img>
+      </v-col>
+    </v-row>
+    </v-card>
+
+
     <h1 class="text-3xl py-6">{{ index.title }}</h1>
 
     <p class="text-xl py-3">{{ index.description }}</p>
@@ -78,6 +87,16 @@ export default {
 
     const page = 1
     const itemsPerPage = 10
+    const images = [
+      "ansiedad_escala_golberg_vs_resiliencia_boxplot.png",
+      "average_month_crime_news.png",
+      "citrulline_boxplots.png",
+      "discriminant_edited_diagram.png",
+      "grpah_diagnose_pallete_clean.png",
+      "suicidios_trend.png",
+      "tags_gender_violence_big.png",
+      "tda_example.png"
+    ]
 
     const locale = app.i18n.locale
 
@@ -97,6 +116,7 @@ export default {
       posts,
       page,
       locale,
+      images,
       itemsPerPage,
     };
   },
@@ -129,6 +149,16 @@ a:link {
 .card {
   margin: 0 auto;
   max-width: 600px !important;
+}
+
+.card-big {
+  margin: 0 auto;
+  max-width: 800px !important;
+}
+
+.row-container {
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .center {
