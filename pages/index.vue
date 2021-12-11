@@ -1,24 +1,10 @@
 <template>
   <div>
     <div class="container_image">
-      <img src="@/assets/logo_white.png" class="image_base"></img>
+      <img src="@/assets/logo_white.png" class="image_base"/>
     </div>
 
-    <v-card class="card-big" v-if="!$vuetify.breakpoint.mobile">
-    <v-row class="row-container d-flex flex-no-wrap justify-space-between">
-      <v-col v-for="img in images" :key="img" >
-        <v-img height="120px" width="120px" :src='require("./img/"+img)'></v-img>
-      </v-col>
-    </v-row>
-    </v-card>
-    <v-card class="card-big" v-else>
-      <v-row class="row-container d-flex flex-no-wrap justify-space-between">
-        <v-col v-for="img in images.slice(0,6)" :key="img" >
-          <v-img height="60px" width="60px" :src='require("./img/"+img)'></v-img>
-        </v-col>
-      </v-row>
-    </v-card>
-
+    <CarouselImage v-if="page==1"/>
 
     <h1 class="text-3xl py-6">{{ index.title }}</h1>
 
@@ -52,7 +38,6 @@
             </div>
           </v-card>
         </nuxt-link>
-        <br></br>
       </div>
     </div>
 
@@ -70,6 +55,7 @@
 
 
 <script>
+import CarouselImage from '~/components/CarouselImage.vue';
 
 const fetchPosts = async ($content, error, locale, page, itemsPerPage) => {
   const skip = (page - 1) * itemsPerPage
@@ -89,24 +75,12 @@ const fetchPosts = async ($content, error, locale, page, itemsPerPage) => {
 }
 
 export default {
+  components: { CarouselImage },
   async asyncData({$content, route, params, error, app}) {
 
     const page = 1
     const itemsPerPage = 10
-    const images = [
-      "2020-tda.png",
-      "ansiedad_escala_golberg_vs_resiliencia_boxplot.png",
-      "average_month_crime_news.png",
-      "citrulline_boxplots.png",
-      "discriminant_edited_diagram.png",
-      "graph_months_subjects.png",
-      "grpah_diagnose_pallete_clean.png",
-      "opinion_cis_and_trend_final.png",
-      "suicidios_trend.png",
-      "tags_gender_violence_big.png",
-      //"tda_example.png",
-      //"tda_figure.png"
-    ]
+    
 
     const locale = app.i18n.locale
 
@@ -126,7 +100,6 @@ export default {
       posts,
       page,
       locale,
-      images,
       itemsPerPage,
     };
   },
@@ -148,9 +121,6 @@ export default {
   },
   data() {
     return {
-      test: "data",
-      test2: "data2",
-      test4: "data4"
     };
   },
 
@@ -164,6 +134,7 @@ a:link {
 
 .card {
   margin: 0 auto;
+  margin-bottom: 6px;
   max-width: 600px !important;
 }
 
