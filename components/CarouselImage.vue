@@ -31,6 +31,11 @@ export default {
           link:"",
         },
         {
+          src: require("../pages/img/argeline_citruline_correlation.png"),
+          title: "l-Arginine and Beetroot Extract Supplementation in the Prevention of Sarcopenia ",
+          link:"https://www.mdpi.com/1424-8247/15/3/290",
+        },
+        {
           src: require("../pages/img/ansiedad_escala_golberg_vs_resiliencia_boxplot.png"),
           title: "current on-process paper",
           link:"",

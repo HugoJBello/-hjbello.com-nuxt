@@ -134,7 +134,7 @@ a:link {
 
 .card {
   margin: 0 auto;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
   max-width: 600px !important;
 }
 

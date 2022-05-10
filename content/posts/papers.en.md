@@ -1,6 +1,6 @@
 ---
 title: "Research Papers"
-date: 2021-11-09T09:50:38.660Z
+date: 2022-05-10T12:27:57.521Z
 translationKey: Research Papers
 tags: ["Research", "Papers"]
 description: my published research papers and my preprints
@@ -11,7 +11,21 @@ language: en
     
 ## Published papers
 
+1. **Suicide Classification for News Media Using Convolutional Neural Networks**. 2022 - *Health Communication*  (journal-article) *[https://doi.org/10.1080/10410236.2022.2058686](https://doi.org/10.1080/10410236.2022.2058686).*
+
+1. **Analysis of the Integration of Drift Detection Methods in  Learning Algorithms for Electrical Consumption Forecasting in Smart  Buildings**. 2022 - *Sustainability*  (journal-article) <sup>Deyslen Mariano Hernández, Luis Hernández-Callejo, Martín Solís, Angel Zorita-Lamadrid, Oscar Duque-Pérez, Luis Gonzalez-Morales, Felix Santos García, Alvaro Jaramillo-Duque, Adalberto Ospino-Castro, Victor Alonso-Gómez, Hugo J. Bello</sup>
+
+1. **Effects of Eccentric vs Concentric Sports on Blood Muscular Damage  Markers in Male Professional Players**. 2022 - *Biology*  (journal-article) <sup>Alfredo Córdova-Martínez, Alberto Caballero-García, Hugo J. Bello, Daniel Perez-Valdecantos, Enrique Roche</sup>
+
+1. **L-Arginine and Beetroot Extract Supplementation in the Pre-vention of  Sarcopenia**. 2022 - *Pharmaceuticals*  (journal-article) <sup>Alfredo Córdova-Martínez *, Alberto Caballero-García, Hugo J Bello, Antoni Pons-Biescas, David C Noriega, Enrique Roche</sup>
+
+1. **Aumento de la demanda de ingresos de menores en la Unidad de Hospitalización Psiquiátrica del Complejo Asistencial de Soria en el contexto de la pandemia por COVID-19**. 2021 - *Revista de Psiquiatría Infanto-Juvenil*  (journal-article) *[https://doi.org/10.31766/revpsij.v38n4a2](https://doi.org/10.31766/revpsij.v38n4a2).* <sup>N Palomar-Ciria, P Blanco del Valle, Hugo J. Bello</sup>
+
+1. **The Immunomodulatory Function of Vitamin D, with Particular Reference to SARS-CoV-2**. 2021 - *Medicina*  (journal-article) *[https://doi.org/10.3390/medicina57121321](https://doi.org/10.3390/medicina57121321).* <sup>Alberto Caballero-García, David C Noriega, Hugo J. Bello, Enrique Roche, Alfredo Córdova-Martínez</sup>
+
 1. **Effects of vitamin D in post-exercise muscle recovery. A systematic  review and meta-analysis**. 2021 - *Nutrients*  (journal-article) <sup>Hugo J Bello, Alberto Caballero-García, Daniel Perez-Valdecantos, Enrique Roche, David C Noriega, Alfredo Córdova-Martínez</sup>
+
+1. **Effects of Vitamin D in Post-Exercise Muscle Recovery. A Systematic Review and Meta-Analysis**. 2021 - *Nutrients*  (journal-article) *[https://doi.org/10.3390/nu13114013](https://doi.org/10.3390/nu13114013).*
 
 1. **News Media and Suicide: Using Big Data Techniques to Assess the Long-Term Impact**. 2021 - *Psychiatry: Interpersonal and Biological Processes*  (journal-article) *[https://doi.org/10.1080/00332747.2021.1989934](https://doi.org/10.1080/00332747.2021.1989934).* <sup>Nora Palomar-Ciria, Hugo J. Bello, Celia Lozano, Fanny Cegla-Schvartzman, Marta Migoya-Borja, Enrique Baca-García</sup>
 
@@ -29,7 +43,7 @@ language: en
 
 1. **Early administration of aripiprazole long-acting injectable in acute inpatients with schizophrenia: a clinical report**. 2020 - *International Clinical Psychopharmacology*  (journal-article) *[https://doi.org/10.1097/yic.0000000000000345](https://doi.org/10.1097/yic.0000000000000345).* <sup>Palomar-Ciria, Nora; Migoya-Borja, Marta; Cegla-Schvartzman, Fanny; Ovejero, Santiago; Alvarez-Garcia, Raquel; Bello, Hugo J.; Baca-García, Enrique</sup>
 
-1. **Superheroes, resilience and COVID-19**. 2020 - *Actualidad Médica*  (journal-article) <sup>Nora Palomar Ciria, Hugo J. Bello</sup>
+1. **Superheroes, resilience and COVID-19**. 2020 - *Actualidad Médica*  (journal-article) *[https://doi.org/10.15568/am.2021.813.cd01](https://doi.org/10.15568/am.2021.813.cd01).* <sup>Nora Palomar Ciria, Hugo J. Bello</sup>
 
 1. **Diagnostic stability of schizophrenia: A systematic review**. 2019 - *Psychiatry Research*  (journal-article) *[https://doi.org/10.1016/j.psychres.2019.04.020](https://doi.org/10.1016/j.psychres.2019.04.020).* <sup>Nora Palomar-Ciria, Fanny Cegla-Schvartz, Javier-David Lopez-Morinigo, Hugo J. Bello, Santiago Ovejero, Enrique Baca-García</sup>
 
