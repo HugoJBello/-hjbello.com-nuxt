@@ -2,7 +2,7 @@
 title: "Research"
 tags: ["Research"]
 categories: ["Research"]
-date: 2020-10-26T18:10:06+01:00
+date: 2022-10-26T18:10:06+01:00
 toc: true
 description: my current research groups and interests
 language: en
@@ -13,6 +13,7 @@ menu:
 ## Research
 
 At this moment I collaborate with the following projects
+- The study of Granger Causality.
 - Use of Big Data and Deep Learning techniques for the classification of news and social media posts. [github news-scrapers](https://github.com/news-scrapers)
 - Use of visualization and data analysis to study muscular damage and stress in professional athletes. I belong to this UVA (University of Valladolid) [research group](https://cytuva.funge.uva.es/proyecto.php?id=649)
 - Big data techniques to study suicide and the diagnostic stability of Schizophrenia and Bipolar disorders. 

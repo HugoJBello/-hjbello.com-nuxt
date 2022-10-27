@@ -1,6 +1,6 @@
 ---
 title: "Research Papers"
-date: 2022-05-10T12:27:57.521Z
+date: 2022-10-27T07:23:52.976Z
 translationKey: Research Papers
 tags: ["Research", "Papers"]
 description: my published research papers and my preprints
@@ -10,6 +10,12 @@ language: en
 
     
 ## Published papers
+
+1. **Efficacy of a connected insulin pen cap in people with non-controlled type 1 diabetes mellitus: a multicenter randomized clinical trial**. 2022 - *Diabetes Care*  (journal-article) <sup>Fernando Gomez-Peralta; Cristina Abreu; Elsa Fernández-Rubio, Laura Cotovad; Pedro Pujante; Sonia Gaztambide; Diego Bellido; Edelmiro Menéndez Torre; Santiago Ruiz-Valdepeñas; Hugo Bello; Xoan Valledor; Jesús Pérez-González; Luis Ruiz-Valdepeñas</sup>
+
+1. **Diagnostic stability of schizophrenia in clinical settings: An observational study of 198,289 patient/years**. 2022 - *Schizophrenia Research*  (journal-article) *[https://doi.org/10.1016/j.schres.2022.05.017](https://doi.org/10.1016/j.schres.2022.05.017).* <sup>NoraPalomar-Ciria, Fanny Cegla-Schvartzman, Hugo J.Bello, Gonzalo Martínez-Alés, Marta Migoya-Borja, Enrique Baca-García</sup>
+
+1. **Nitric-Oxide-Inducing Factors on Vitamin D Changes in Older People Susceptible to Suffer from Sarcopenia**. 2022 - *International Journal of Environmental Research and Public Health*  (journal-article) *[https://doi.org/10.3390/ijerph19105938](https://doi.org/10.3390/ijerph19105938).* <sup>Alfredo Córdova, Alberto Caballero-García , David Noriega-González , Hugo J Bello , Antoni Pons, Enrique Roche</sup>
 
 1. **Suicide Classification for News Media Using Convolutional Neural Networks**. 2022 - *Health Communication*  (journal-article) *[https://doi.org/10.1080/10410236.2022.2058686](https://doi.org/10.1080/10410236.2022.2058686).*
 
@@ -22,8 +28,6 @@ language: en
 1. **Aumento de la demanda de ingresos de menores en la Unidad de Hospitalización Psiquiátrica del Complejo Asistencial de Soria en el contexto de la pandemia por COVID-19**. 2021 - *Revista de Psiquiatría Infanto-Juvenil*  (journal-article) *[https://doi.org/10.31766/revpsij.v38n4a2](https://doi.org/10.31766/revpsij.v38n4a2).* <sup>N Palomar-Ciria, P Blanco del Valle, Hugo J. Bello</sup>
 
 1. **The Immunomodulatory Function of Vitamin D, with Particular Reference to SARS-CoV-2**. 2021 - *Medicina*  (journal-article) *[https://doi.org/10.3390/medicina57121321](https://doi.org/10.3390/medicina57121321).* <sup>Alberto Caballero-García, David C Noriega, Hugo J. Bello, Enrique Roche, Alfredo Córdova-Martínez</sup>
-
-1. **Effects of vitamin D in post-exercise muscle recovery. A systematic  review and meta-analysis**. 2021 - *Nutrients*  (journal-article) <sup>Hugo J Bello, Alberto Caballero-García, Daniel Perez-Valdecantos, Enrique Roche, David C Noriega, Alfredo Córdova-Martínez</sup>
 
 1. **Effects of Vitamin D in Post-Exercise Muscle Recovery. A Systematic Review and Meta-Analysis**. 2021 - *Nutrients*  (journal-article) *[https://doi.org/10.3390/nu13114013](https://doi.org/10.3390/nu13114013).*
 

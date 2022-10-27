@@ -1,6 +1,6 @@
 ---
 title: "Proyectos"
-date: 2020-01-26T18:10:06+01:00
+date: 2022-10-26T18:10:06+01:00
 draft: false
 translationKey: Proyectos
 language: es
@@ -10,7 +10,8 @@ tags: ["Research", "Coding"]
 ---
 
 Aquí algunos proyectos interesantes en los que estoy trabajando
-- Trabajo para [insulcloud](https://insulclock.com/). Estamos desarrollando un sistema 360 para ayudar a las personas con diabetes.
+- Trabajo en la Universidad de Valladolid (Campus Soria) como profesor ayudante doctor, en el departamento de Matemática Aplicada, investigando y impartiendo clases principalmente en la escuela de la Ingeniería Forestal y en La Facultad de Empresariales.
+- Trabajo mediante un contrato de investigación con la UVA, para [insulcloud](https://insulclock.com/). Estamos desarrollando un sistema 360 para ayudar a las personas con diabetes mediante Machine Learning.
 - Trabajé para [Universal Health Chain](https://www.universal-chain.com/). Contribuí en el desarrollo de un identificador universal de salud para comunicar pacientes y personal sanitario usando encriptación punto a punto y blockchain. Trabajo principalmente con *golang*, *nodejs*, *react (web y native)*, *python (keras, pandas, tensorflow)*.
 - Colaboré con el proyecto de software libre [Driver UE](https://www.driver-project.eu/). Este es un proyecto para la comunicación en caso de emergencias de la unión europea. Yo trabajé en el conector python.
 - Colaboré con [Peluditos OWS](https://github.com/OSW-Peludos/peluditos-project). Este proyecto conecta animales perdidos con sus dueños mediante machine learning y tecnologías web.

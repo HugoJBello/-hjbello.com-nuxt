@@ -4,4 +4,4 @@ language: es
 description: 
 published: true
 ---
-Bienvenido a mi página.
+Bienvenido a la web de Hugo J. Bello.

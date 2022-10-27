@@ -10,6 +10,7 @@ tags: ["Research", "Coding"]
 ---
 
 There are some interesting projects that want to list here because I had a lot of fun doing them:
+- I work at the University of Valladolid (Campus Soria), at the department of Applied Mathematics researching and teaching at Escuela de Ingeniería Forestal and Facultad de Empresariales.
 - I am working with [insulcloud](https://insulclock.com/) Team. I am working building a 360 software system to help people with diabetes.
 - I worked with the [Universal Health Chain](https://www.universal-chain.com/) Team. I collaborated building a universal identifier for health care and donations using blockchain technology.
 - I worked for the open source project [Driver UE](https://www.driver-project.eu/). This is an emergency notification system based on Apache Kafka. In particular I worked in the [Python adapter](https://github.com/DRIVER-EU/python-test-bed-adapter). I completed this work during my time at GMV.
