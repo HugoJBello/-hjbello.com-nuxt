@@ -58,7 +58,7 @@ export default {
     vueI18nLoader: true
   },
   googleAnalytics: {
-    id: 'UA-181757842-1'
+    id: 'G-CZ26BQ61HL'
   },
   generate: {
     crawler: true,
